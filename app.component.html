@@ -1,0 +1,19 @@
+<div id="div1">
+    <label for="C">Celsius:</label>
+    <div id="d1">
+        <input type="number" id="C" [(ngModel)]="celsiusValue" placeholder="Enter Number" (input)="calcConversion()" on><br><br>
+    </div>
+    
+    <label for="F">Fahrenheit:</label>
+    <div id="d2">
+        <input type="number" id="F" [(ngModel)]="fahrenheitValue" placeholder="Enter Number" (input)="calcConversion()" ><br><br>
+    </div>
+    
+    <label for="k">Kelvin:</label>
+    <div id="d3">
+        <input type="number" id="k" [(ngModel)]="kelvinValue" placeholder="Enter Number" (input)="calcConversion() " >
+    </div>
+</div>
+<h1>Celsius: {{celsiusValue}}|</h1>
+<h1>Fahrenheit: {{fahrenheitValue}}|</h1>
+<h1>Kelvin: {{kelvinValue}}|</h1>
